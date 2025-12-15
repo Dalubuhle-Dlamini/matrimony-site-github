@@ -1,0 +1,91 @@
+.search-result {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.profile-photo {
+    flex: 1 1 150px;
+    margin-right: 20px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-details {
+    flex: 2;
+    margin-bottom: 20px;
+}
+
+.member-id {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.member-id i {
+    margin-right: 10px;
+}
+
+.member-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.member-details span {
+    font-weight: bold;
+}
+
+.user-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-buttons button {
+    background: white;
+    display: block;
+    color: #d61e2d;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 32px;
+    outline: none;
+    font-family: "Nunito", system-ui;
+    cursor: pointer;
+}
+
+.user-buttons button i {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .search-result {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+
+    .user-buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+}

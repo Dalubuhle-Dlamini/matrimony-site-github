@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+body, html {
+    position: relative;
+    z-index: -2;
+}
+
+.home-page{
+    min-height: 20vh;
+}
+
+.layout {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.profile {
+    animation: popUp ease-in-out 350ms;
+    border-radius: 25px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.17);
+    margin-top: 40px;
+    padding: 28px 30px 30px 35px;
+    position: relative;
+    width: 500px;
+}
+
+.profile__account {
+    align-self: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-left: 135px; /* 125px + 10px */
+}
+
+.profile__button {
+    border-radius: 50px;
+    border: 1px solid #000000;
+    color: #000000;
+    display: block;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 250ms background, ease-in-out 250ms color;
+}
+
+.profile__button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.profile__edit {
+    flex: none;
+    margin-left: 30px;
+    width: 140px;
+}
+
+.profile__header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile__icon {
+    flex: none;
+    font-size: 1.5em;
+    margin-right: 10px;
+    padding-top: 3px;
+}
+
+.profile__icon--gold {
+    color: #eab100;
+}
+
+.profile__icon--blue {
+    color: #8faae8;
+}
+
+.profile__icon--pink {
+    color: #ff86af;
+}
+
+.profile__key {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.profile__picture {
+    background: #ffffff;
+    border-radius: 100px;
+    border: 10px solid #ffffff;
+    height: 125px;
+    position: absolute;
+    top: -40px;
+    width: 125px;
+}
+
+.profile__picture::before {
+    border-radius: 100px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.17);
+    content: "";
+    height: calc(100% + 20px);
+    left: -10px;
+    position: absolute;
+    top: -10px;
+    width: calc(100% + 20px);
+    z-index: -1;
+}
+
+.profile__picture img {
+    border-radius: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.profile__stat {
+    animation: slideUp ease-in-out 350ms forwards;
+    border-right: 1px solid #e9e9e9;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    opacity: 0;
+    padding: 10px 4px;
+    transform: translateY(5px);
+}
+
+.profile__stat:last-of-type {
+    border-right: none;
+}
+
+.profile__stats {
+    display: flex;
+}
+
+.profile__username {
+    font-weight: 600;
+    margin: 0;
+    text-align: right;
+}
+
+.profile__value {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+.profile-details {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.profile-details__heading {
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.profile-details__bio {
+    margin: 10px 0;
+}
+
+.profile-details__info {
+    margin-top: 10px;
+}
+
+.profile-details__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-details__item i {
+    margin-right: 8px;
+}
+
+
+/* secxtion 2 start */
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.user-card-suggestion {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.user-card-suggestion:hover {
+    transform: scale(1.05);
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.profile-info .age {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.profile-info .details {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.view-profile{
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+

@@ -1,0 +1,91 @@
+.search-caste{
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.form-field {
+    margin-bottom: 16px;
+    width: 100%;
+    position: relative;
+}
+
+.form-field .icon {
+    position: absolute;
+    background: white;
+    color: #d61e2d;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.form-field .icon:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-left: 12px solid white;
+    position: absolute;
+    top: 8px;
+    right: -20px;
+}
+
+.form-field input,
+.form-field select {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 100%;
+    border-radius: 16px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    transition: all 0.2s;
+    font-family: "Nunito", system-ui;
+}
+
+.form-field select option {
+    color: black;
+}
+
+.form-field input::placeholder {
+    color: white;
+}
+
+.form-field input:hover,
+.form-field input:focus {
+    background: white;
+    color: #d61e2d;
+    transition: all 0.2s;
+}
+
+.form-field input:hover::placeholder {
+    color: #d61e2d;
+}
+
+button {
+    background: white;
+    display: block;
+    color: #d61e2d;
+    width: 20%;
+    border: none;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 32px;
+    outline: none;
+    font-family: "Nunito", system-ui;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

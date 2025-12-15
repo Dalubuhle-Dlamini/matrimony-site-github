@@ -1,0 +1,132 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 23, 2024, 11:05:38 AM
+    Author     : dsihle875@gmail.com
+*/
+.blog-container {
+    border-radius: 5px;
+    font-family: "adelle-sans", sans-serif;
+    font-weight: 100;
+    margin: 48px auto;
+    width: 20rem;
+}
+
+.blog-container a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+.blog-container a:hover {
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+}
+
+.blog-author, .blog-author--no-cover {
+    margin: 0 auto;
+    padding-top: 0.125rem;
+    width: 80%;
+}
+
+.blog-author h3 {
+    color: #fff;
+    font-weight: 100;
+}
+.blog-author--no-cover h3 {
+    color: #fff;
+    font-weight: 100;
+}
+.blog-body {
+    margin: 0 auto;
+    width: 80%;
+}
+.video-body {
+    height: 100%;
+    width: 100%;
+}
+.blog-title h1 a {
+    color: #333;
+    font-weight: 100;
+}
+.blog-summary p {
+    color: #fff;
+}
+
+.blog-tags a {
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #999;
+    font-size: 0.75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    padding: 0 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 5rem;
+}
+.blog-footer {
+    border-top: 1px solid #e6e6e6;
+    margin: 0 auto;
+    padding-bottom: 0.125rem;
+    width: 80%;
+}
+.blog-footer ul {
+    list-style: none;
+    display: flex;
+    flex: row wrap;
+    justify-content: flex-end;
+    padding-left: 0;
+}
+.blog-footer li:first-child {
+    margin-right: auto;
+}
+.blog-footer li + li {
+    margin-left: 0.5rem;
+}
+.blog-footer li {
+    color: #fff;
+    font-size: 0.75rem;
+    height: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    white-space: nowrap;
+}
+.blog-footer li a {
+    color: #999;
+}
+
+.published-date {
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0 0.5rem;
+}
+.numero {
+    position: relative;
+    top: -0.5rem;
+}
+
+
+@media screen and (min-width: 480px) {
+    .blog-container {
+        width: 28rem;
+    }
+}
+@media screen and (min-width: 767px) {
+    .blog-container {
+        width: 40rem;
+    }
+}
+@media screen and (min-width: 959px) {
+    .blog-container {
+        width: 50rem;
+    }
+}
+
